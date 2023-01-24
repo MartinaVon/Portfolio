@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Mont";
+    src: url(/assets/font/Mont-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mont";
+}
+
+@import "header";
+@import "index";
