@@ -34,46 +34,33 @@ header .hamburger-menu {
   height: 95vh;
   width: 100%;
   display: flex;
-  background-image: url(/assets/img/FONDO2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: bottom -220px right -200px;
-  background-size: cover;
 }
 .section-for-presentation .presentation__title {
   width: 100%;
   height: 80vh;
   padding: 30px 10px 0px 10px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section-for-presentation .presentation__title h2 {
   font-size: 57px;
 }
 .section-for-presentation .presentation__title .presentation-title-1 {
-  position: absolute;
-  top: 25%;
-  z-index: 1;
-  font-size: 60px;
-}
-.section-for-presentation .presentation__title .presentation-title-2 {
-  position: absolute;
-  top: 40%;
-  line-height: 50px;
-  z-index: 2;
+  margin-bottom: 20px;
 }
 .section-for-presentation .presentation__title .underline {
-  position: absolute;
-  display: block;
   background-color: #e2d62f;
   width: 200px;
   height: 25px;
-  top: 55%;
-  z-index: 0;
+  position: relative;
+}
+.section-for-presentation .presentation__title .underline .presentation-title-2 {
+  position: absolute;
+  top: -40px;
 }
 .section-for-presentation .presentation__title h5 {
   font-size: 20px;
-  position: absolute;
-  top: 62%;
 }
 
 .section-for-info {
@@ -94,16 +81,21 @@ header .hamburger-menu {
   top: -50px;
   align-self: flex-end;
 }
-.section-for-info h3 {
-  color: white;
-  font-size: 70px;
-  line-height: 70px;
+.section-for-info .info-title-container {
+  width: 100vw;
   margin: 20px 0;
   border-bottom: 1px solid white;
 }
-.section-for-info h3 span {
+.section-for-info .info-title-container h3 {
+  color: white;
+  font-size: 70px;
+  line-height: 70px;
+  display: inline;
+}
+.section-for-info .info-title-container span {
   color: #e2d62f;
   font-size: 50px;
+  text-align: end;
 }
 
 .section-for-about {
@@ -152,9 +144,7 @@ header .hamburger-menu {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url(/assets/img/FONDO2.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: bottom -220px right -200px;
-  background-size: cover;
-}/*# sourceMappingURL=style.css.map */
+}
+.section-for-contact h4 {
+  font-size: 20px;
+}
